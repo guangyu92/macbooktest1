@@ -1,0 +1,11 @@
+{
+   
+    "python.venvPath":"/Users/bjliu/anaconda/envs",
+    "python.pythonPath":"/Users/hikari/opt/anaconda3/envs/myenv/bin/python",
+    "python.venvFolders":[
+        "envs",
+        ".pyenv",
+        ".direnv"
+    ],
+    "code-runner.runInTerminal": true
+}
