@@ -3,8 +3,10 @@ from mxnet import nd
 
 x=nd.arange(12)
 
-m=x.reshape((3,4))
+m=nd.arange(12)
 
+s=x*m
+print(s)
 print(m)
 print(x.size)
 
