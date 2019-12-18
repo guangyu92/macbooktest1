@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "/Users/guangyupiao/Documents/workspace"
+		}
+	],
+	"settings": {
+		"python.dataScience.stopOnFirstLineWhileDebugging": false,
+		"python.dataScience.sendSelectionToInteractiveWindow": true,
+		"python.dataScience.magicCommandsAsComments": true,
+		"python.analysis.memory.keepLibraryAst": true,
+		"python.analysis.memory.keepLibraryLocalVariables": true
+	}
+}
