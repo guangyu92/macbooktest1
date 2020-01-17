@@ -1,38 +1,13 @@
-information={}
-editing=True
-info=["寄件人：","寄件人地址：","寄件人电话：","收件人：","收件人地址：","收件人电话："]
-print('\t')
-for a in range(0,6):
-    information[info[a]]=input('\t'+info[a]+':')
-print('\t_________________\n\t请确认信息：\n')
+def get_profile(first_name,second_name,**info):
+    profile={}
+    profile["first_name"]=first_name
+    profile['second_name']=second_name
 
-for x,y in information.items():
-    print('\n\t'+x+':'+y)
-print('\n')
+    for key,value in info.items():
+        profile[key]=value
+    return profile
 
-while editing:
-    item=input('''\t________________\n\t请输入需要修改的信息的序号：（如无需要，请按9）
-    0 寄件人
-    1 寄件人地址
-    2 寄件人电话
-    3 收件人
-    4 收件人地址
-    5 收件人电话
-    \n\t''')
-    z=int(item)
-    if z==9:
-        break
-    elif z<=5 and z>=0:
-        information[info[z]]=input('\t'+info[z]+':')
-        print('\t_______________\n\t请确认您的信息：\n')
-        for m,n in information.items():
-            print('\n\t'+m+':'+n)
-    
-    else:
-        print('\t_________________\n\t请仅输入一个序号')
-    judge=input('\t___________________\n\t输入小写字母y继续修改，其他按键结束')
+user_info=get_profile("underwood","frank",sex='man',weight='180',height='175',hobby='play')
 
-    if judge=="y":
-        continue
-    else:
-        editing=False
+for x,y in user_info.items():
+    print('\n\t'+str(x)+':'+str(y))
