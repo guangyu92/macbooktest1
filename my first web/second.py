@@ -24,7 +24,6 @@ def step_gradient(b_current,w_current,points,lr):
     for i in range(0,len(points)):
         x=points[i,0]
         y=points[i,1]
-        
         b_gradient+=(2/M)*((w_current*x+b_current)-y)
         w_gradient+=(2/M)*x*((w_current*x+b_current)-y)
     new_b=b_current-(lr*b_gradient)
