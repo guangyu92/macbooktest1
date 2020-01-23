@@ -54,6 +54,7 @@ def main():
     
     [b,w],losses=gradient_descent(data,initial_b,initial_w,lr,num_iterations)
     loss=mse(b,w,data)
-    print(f'final loss:{loss},w:{w},b:{b}')
+    print(f'final loss:{loss},w:{w},b:{b}') 
+    
 
 
