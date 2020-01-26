@@ -11,3 +11,17 @@ user_info=get_profile("underwood","frank",sex='man',weight='180',height='175',ho
 
 for x,y in user_info.items():
     print('\n\t'+str(x)+':'+str(y))
+
+
+class Circle():
+
+    def __init__(self,radius,center):
+        self.radius=radius
+        self.center=center
+    
+    def printcircle(self):
+        print('\tthe radius is '+str(self.radius)+
+        '\n\tthe center is '+str(self.center))
+
+circle_1=Circle(4,(2,4))
+circle_1.printcircle()    
