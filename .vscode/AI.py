@@ -44,6 +44,7 @@ def gradient_descent(points,starting_b,starting_w,lr,num_iterations):
         if step%50==0:
             print(f"iteration:{step},loss:{loss},w:{w},b:{b}")
     return[b,w]
+    
 
 
 def main():
