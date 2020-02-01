@@ -1,3 +1,7 @@
+import unittest
+
+
+
 def get_profile(first_name,second_name,**info):
     profile={}
     profile["first_name"]=first_name
@@ -25,3 +29,11 @@ class Circle():
 
 circle_1=Circle(4,(2,4))
 circle_1.printcircle()    
+
+name=input('please enter your name: ')
+tel=input('please enter your tel: ')
+
+with open('first_write.txt','w') as file:
+    file.write(name)
+    file.write(tel)
+
