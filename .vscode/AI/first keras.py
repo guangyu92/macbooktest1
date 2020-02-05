@@ -11,3 +11,6 @@ print(x.shape,y.shape)
 train_dataset=tf.data.Dataset.from_tensor_slices((x,y))
 train_dataset=train_dataset.batch(512) 
 
+a=tf.constant([True,False])
+aa=tf.cast(a,tf.int32)
+print(aa)
