@@ -38,3 +38,9 @@ with open('first_write.txt','w') as file:
     file.write(name)
     file.write(tel)
 
+
+
+    
+
+
+    
